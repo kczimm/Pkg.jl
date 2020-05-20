@@ -1,4 +1,4 @@
-# [**12.** API Reference](@id API-Reference)
+# [**13.** API Reference](@id API-Reference)
 
 This section describes the function interface, or "API mode",
 for interacting with Pkg.jl. The function API is recommended
@@ -86,4 +86,20 @@ Pkg.Artifacts.ensure_artifact_installed
 Pkg.Artifacts.ensure_all_artifacts_installed
 Pkg.Artifacts.@artifact_str
 Pkg.Artifacts.archive_artifact
+```
+
+## [Scratchspace API Reference](@id Scratchspace-Reference)
+
+!!! compat "Julia 1.6"
+    Pkg's Scratchspace API requires at least Julia 1.6.
+
+```@docs
+Pkg.Spaces.get_space!
+Pkg.Spaces.@get_space!
+Pkg.Spaces.delete_space!
+Pkg.Spaces.clear_spaces!
+Pkg.Spaces.with_spaces_directory
+Pkg.Spaces.spaces_dir
+Pkg.Spaces.space_path
+Pkg.Spaces.track_space_access
 ```
